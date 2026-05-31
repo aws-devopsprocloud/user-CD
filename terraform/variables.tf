@@ -39,12 +39,12 @@ variable "app_version" {
 variable "components" {
     default = {
         # backend components are attaching to backend ALB
-        catalogue = {
-            rule_priority = 10
-        }
-        # user = {
-        #     rule_priority = 20
+        # catalogue = {
+        #     rule_priority = 10
         # }
+        user = {
+            rule_priority = 20
+        }
         # cart = {
         #     rule_priority = 30
         # }
